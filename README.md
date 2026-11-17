@@ -63,12 +63,12 @@ Estos temas **no son requisitos** de la extensión: sirven para probar su funcio
 
 |  Ejemplos | Desktop  | Fullscreen  |
 |---|---|---|
-| Cover  |screenshots/D Cover.png   |screenshots/FS Cover.png   |
-| Icon  |screenshots/D Icon.png   |screenshots/FS Icon.png   |
-|  Logo |screenshots/D Logo.png   |screenshots/FS logo.png   |
-|  BG |screenshots/D BG.png   |screenshots/FS BG.png   |
-| BG + Logo  |screenshots/D BG+Logo.png   |screenshots/FS BG+Icon.png   |
-|  example in compatible theme |screenshots/Ejemplo con tema.png   |screenshots/Ejemplo con tema FS.png   |
+| Cover  | ![Cover Desktop](screenshots/D%20Cover.png) | ![Cover Fullscreen](screenshots/FS%20Cover.png) |
+| Icon  | ![Icon Desktop](screenshots/D%20Icon.png) | ![Icon Fullscreen](screenshots/FS%20Icon.png) |
+|  Logo | ![Logo Desktop](screenshots/D%20Logo.png) | ![Logo Fullscreen](screenshots/FS%20logo.png) |
+|  BG | ![BG Desktop](screenshots/D%20BG.png) | ![BG Fullscreen](screenshots/FS%20BG.png) |
+| BG + Logo  | ![BG + Logo Desktop](screenshots/D%20BG%2BLogo.png) | ![BG + Logo Fullscreen](screenshots/FS%20BG%2BIcon.png) |
+|  example in compatible theme | ![example in compatible theme Desktop](screenshots/Ejemplo%20con%20tema.png) | ![example in compatible theme Fullscreen](screenshots/Ejemplo%20con%20tema%20FS.png) |
 
 ### Integración en un tema propio (XAML)
 
