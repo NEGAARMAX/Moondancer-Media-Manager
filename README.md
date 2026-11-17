@@ -58,6 +58,18 @@ Se proporcionan dos temas de ejemplo, basados en la presentación predeterminada
 
 Estos temas **no son requisitos** de la extensión: sirven para probar su funcionamiento y como referencia para adaptar otros temas. Los paquetes de ejemplo tienen versión de tema **0.5.0**, distinta de la versión **1.0.0** de la extensión. La implementación incluida debe comprobarse en cada tema derivado; la compatibilidad no se hereda automáticamente.
 
+## Ejemplos visuales
+
+
+|  Ejemplos | Desktop  | Fullscreen  |
+|---|---|---|
+| Cover  |screenshots/D Cover.png   |screenshots/FS Cover.png   |
+| Icon  |screenshots/D Icon.png   |screenshots/FS Icon.png   |
+|  Logo |screenshots/D Logo.png   |screenshots/FS logo.png   |
+|  BG |screenshots/D BG.png   |screenshots/FS BG.png   |
+| BG + Logo  |screenshots/D BG+Logo.png   |screenshots/FS BG+Icon.png   |
+|  example in compatible theme |screenshots/Ejemplo con tema.png   |screenshots/Ejemplo con tema FS.png   |
+
 ### Integración en un tema propio (XAML)
 
 Los ejemplos conservan el elemento `PART_ImageCover` utilizado por Playnite y superponen elementos inicialmente ocultos para mostrar iconos, fondos y logotipos. Un `DataTrigger` consulta el modo seleccionado en Moondancer y controla qué imágenes son visibles. Ejemplo de Fullscreen:
