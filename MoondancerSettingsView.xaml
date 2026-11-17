@@ -1,0 +1,44 @@
+<UserControl x:Class="Moondancer.MoondancerSettingsView"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+ <ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel Margin="14">
+ <TextBlock Text="Project Moondancer — 1.0.0" FontWeight="Bold" FontSize="16" Margin="0,0,0,12"/>
+ <GroupBox Header="Escritorio (Desktop)" Margin="0,0,0,12"><StackPanel Margin="10">
+ <TextBlock Text="Modalidad visual" Margin="0,0,0,5"/>
+ <ComboBox Width="260" HorizontalAlignment="Left" SelectedValuePath="Tag" SelectedValue="{Binding Settings.Desktop.VisualMode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+ <ComboBoxItem Content="Cover" Tag="Cover"/><ComboBoxItem Content="Icon" Tag="Icon"/><ComboBoxItem Content="Background" Tag="Background"/><ComboBoxItem Content="Logo" Tag="Logo"/><ComboBoxItem Content="Background + Logo" Tag="BackgroundLogo"/>
+ </ComboBox>
+ <TextBlock Text="Marco transparente para Logo" Margin="0,12,0,5"/>
+ <ComboBox Width="260" HorizontalAlignment="Left" SelectedValuePath="Tag" SelectedValue="{Binding Settings.Desktop.LogoAspectRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+ <ComboBoxItem Content="16:9" Tag="16:9"/><ComboBoxItem Content="1:1" Tag="1:1"/>
+ </ComboBox></StackPanel></GroupBox>
+ <GroupBox Header="Pantalla completa (Fullscreen)"><StackPanel Margin="10">
+ <TextBlock Text="Modalidad visual" Margin="0,0,0,5"/>
+ <ComboBox Width="260" HorizontalAlignment="Left" SelectedValuePath="Tag" SelectedValue="{Binding Settings.Fullscreen.VisualMode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+ <ComboBoxItem Content="Cover" Tag="Cover"/><ComboBoxItem Content="Icon" Tag="Icon"/><ComboBoxItem Content="Background" Tag="Background"/><ComboBoxItem Content="Logo" Tag="Logo"/><ComboBoxItem Content="Background + Logo" Tag="BackgroundLogo"/>
+ </ComboBox>
+ <TextBlock Text="Marco transparente para Logo" Margin="0,12,0,5"/>
+ <ComboBox Width="260" HorizontalAlignment="Left" SelectedValuePath="Tag" SelectedValue="{Binding Settings.Fullscreen.LogoAspectRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+ <ComboBoxItem Content="16:9" Tag="16:9"/><ComboBoxItem Content="1:1" Tag="1:1"/>
+ </ComboBox></StackPanel></GroupBox>
+ <GroupBox Header="Información y recomendaciones" Margin="0,12,0,0">
+ <StackPanel Margin="10">
+  <TextBlock Text="Relación de aspecto de la cuadrícula" FontWeight="SemiBold" Margin="0,0,0,6"/>
+  <TextBlock Text="Las dimensiones de los elementos se ajustan en:" TextWrapping="Wrap"/>
+  <TextBlock Text="Configuración → Apariencia → Vista de cuadrícula → Relación de aspecto objetivo"
+             TextWrapping="Wrap" Margin="0,5,0,10"/>
+  <TextBlock Text="Proporciones recomendadas" FontWeight="SemiBold" Margin="0,0,0,6"/>
+  <TextBlock Text="Cover: 3:4"/>
+  <TextBlock Text="Icon: 1:1"/>
+  <TextBlock Text="Background: 16:9"/>
+  <TextBlock Text="Logo: 1:1 o 16:9"/>
+  <TextBlock Text="Background + Logo: 16:9"/>
+  <TextBlock Text="Importante: la relación de aspecto es una opción global de Playnite y afecta tanto a Desktop como a Fullscreen. Moondancer no la modifica automáticamente."
+             TextWrapping="Wrap" Margin="0,12,0,0"/>
+  <TextBlock Text="Compatibilidad con temas" FontWeight="SemiBold" Margin="0,12,0,5"/>
+  <TextBlock Text="Moondancer solo modifica la presentación en temas Desktop o Fullscreen que integren soporte para esta extensión. Los demás temas mantienen su comportamiento habitual."
+             TextWrapping="Wrap"/>
+ </StackPanel>
+</GroupBox>
+ </StackPanel></ScrollViewer>
+</UserControl>
