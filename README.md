@@ -1,3 +1,5 @@
+(screenshots/Presentación.png)
+
 # Project Moondancer — Media Manager
 
 Extensión de Playnite para seleccionar los recursos visuales mostrados por **temas compatibles** en Desktop y Fullscreen. No modifica las imágenes ni los metadatos originales de los juegos.
